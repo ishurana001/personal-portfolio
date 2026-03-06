@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-row">
+                <div class="header-text">
+                    <p>Full-Stack Developer</p>
+                    <h1>Hi, I'm <span>Kuverdeep</span> <br> <span class="last-name">Pundir</span></h1>
+                </div>
+                <div class="header-img-container">
+                    <div class="hero-circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a final-year Electronics and Communication Engineering student with a strong passion for
+                        software development. With a solid foundation in Data Structures & Algorithms and full-stack web
+                        technologies, I enjoy building scalable applications and solving real-world problems through
+                        efficient and well-structured code.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming & Concepts</span><br>C++ • Data Structures & Algorithms (DSA) •
+                                Object-Oriented Programming (OOP)</li>
+                            <li><span>Frontend Development</span><br>Next.js • React.js • JavaScript • HTML • CSS •
+                                Tailwind CSS • Bootstrap</li>
+                            <li><span>Backend Development</span><br>Node.js • Express.js • REST APIs</li>
+                            <li><span>Database & Tools</span><br>MongoDB • SQL • Git • GitHub • Vs Code</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>LeetCode</span><br>Solved 350+ Data Structures & Algorithms problems on LeetCode,
+                                strengthening problem-solving skills and optimized coding in C++.</li>
+                            <li><span>Academic Excellence</span><br> Maintaining a strong academic record while pursuing
+                                B.Tech in Electronics and Communication Engineering at G.L. Bajaj Institute of
+                                Technology & Management.</li>
+                            <li><span>Full-Stack Development</span><br>Built multiple full-stack web applications using
+                                React.js, Next.js, Node.js, and MongoDB, focusing on scalable and efficient solutions.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>G.L. Bajaj Institute of Technology & Management (2022 - 2026)</span><br>B.Tech in
+                                Electronics and Communication Engineering</li>
+                            <li><span>S.G.R.R. Public School (2021 - 2022)</span><br>Senior Secondary Education • Class
+                                XII (CBSE)</li>
+                            <li><span>S.G.R.R. Public School (2019 - 2020)</span><br>Secondary Education • Class X
+                                (CBSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Full-Stack Web Development</h2>
+                    <p>Building fast, scalable, and responsive web applications using the MERN stack and Next.js. I
+                        focus on clean code and seamless user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Frontend Optimization</h2>
+                    <p>Turning complex designs into pixel-perfect, high-performance interfaces using Tailwind CSS and
+                        React. I ensure your site is fast, mobile-friendly, and accessible.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Logic & API Development</h2>
+                    <p>Developing robust backend systems and REST APIs. Leveraging my strong DSA background to write
+                        optimized server-side logic and efficient database queries.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Vox-Tome AI</h3>
+                        <p>A production-grade AI platform that enables users to have real-time voice conversations with
+                            PDFs and books.</p>
+                        <a href="https://vox-tome-ai.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Interviewer AI (Ongoing)</h3>
+                        <p>An AI-powered mock interview platform that simulates real Technical and HR interview rounds.
+                        </p>
+                        <a href="https://github.com/ishurana001/Interviewer-AI-Ongoing"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Codeify</h3>
+                        <p>An AI-powered code review platform that analyzes program logic, detects bugs, and suggests
+                            optimized solutions.</p>
+                        <a href="https://kuverdeep-codeify.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png">
+                    <div class="layer">
+                        <h3>AetherCode-AI</h3>
+                        <p>An AI-powered frontend automation tool that converts text prompts into production-ready UI
+                            components.</p>
+                        <a href="https://aethercodeai.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.png">
+                    <div class="layer">
+                        <h3>AI Article Summarizer</h3>
+                        <p>A modern web application that converts lengthy articles into concise summaries using GPT-4.
+                        </p>
+                        <a href="https://kuverdeep-aisummarizer.netlify.app/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <a href="mailto:kuverdeeppundir2005@gmail.com" style="text-decoration: none; color: inherit;">
+                            <i class="fas fa-paper-plane"></i> kuverdeeppundir2005@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="tel:+918267082174" style="text-decoration: none; color: inherit;">
+                            <i class="fas fa-phone-alt"></i> +91 8267082174
+                        </a>
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kuverdeep-pundir/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ishurana001/"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/ishurana__001"><i class="fab fa-instagram"></i></a>
+                        <a href="https://leetcode.com/u/ishurana001/"><i class="fas fa-code"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2026. Made with <i class="fas fa-heart"></i> by Kuverdeep.</p>
+        </div>
+    </div>
+
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyCczFUJtetfMjalOERmBWOPGJ7BOpZQbeXEvpRGhYFzFBuVBvnX-0WePUwB5C6c8TQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
